@@ -47,10 +47,11 @@ export const ButtonDelete = styled.button`
   border-radius: 10px;
   cursor: pointer;
   background-color: #db6d69;
-  padding: 5px;
+  padding: 7px 30px;
   transition: background-color 0.3s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   margin-top: 30px;
+  font-size: 16px;
 
   :hover {
     background-color: #999;
@@ -84,5 +85,24 @@ export const TextAdderess = styled.p`
 `;
 
 export const IMG = styled.img`
-  width: 180px;
+  width: 200px;
+  height: 250px;
+`;
+
+export const ButtonUpdate = styled.button`
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #6997db;
+  padding: 7px 30px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  font-size: 16px;
+  width: 150px; /* Встановіть фіксовану ширину */
+  height: 40px; /* Встановіть фіксовану висоту */
+  :hover {
+    background-color: #8e9e96;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: red;
+  }
 `;
