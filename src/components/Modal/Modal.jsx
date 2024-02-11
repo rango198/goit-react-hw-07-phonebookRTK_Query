@@ -8,10 +8,7 @@ import {
 } from './Modal.styled';
 
 import { ModalForm } from 'components/ModalForm/ModalForm';
-import {
-  useDeleteContactMutation,
-  useUpdateContactMutation,
-} from 'store/redux/contact/contactAPI';
+import { useUpdateContactMutation } from 'store/redux/contact/contactAPI';
 import { toast } from 'react-hot-toast';
 
 export const Modal = ({
