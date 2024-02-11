@@ -12,7 +12,6 @@ import {
 } from './ContactsForm.styled';
 import { useAddContactMutation } from 'store/redux/contact/contactAPI';
 import { toast } from 'react-hot-toast';
-import { Loader } from 'components/Loader/Loader';
 
 const initialValues = {
   name: '',
