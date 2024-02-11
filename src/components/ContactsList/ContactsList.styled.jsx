@@ -5,6 +5,8 @@ export const List = styled.ul`
   flex-direction: column;
   margin-top: 15px;
   gap: 15px;
+  height: 300px;
+  overflow-y: auto;
 `;
 
 export const BtnItem = styled.button`
@@ -25,4 +27,5 @@ export const BtnItem = styled.button`
 export const ListItem = styled.li`
   display: flex;
   gap: 6px;
+  cursor: pointer;
 `;

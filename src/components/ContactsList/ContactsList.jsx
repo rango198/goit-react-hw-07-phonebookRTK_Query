@@ -1,5 +1,5 @@
 import { List } from './ContactsList.styled';
-import { useGetContactsQuery } from 'store/redux/contact/contact';
+import { useGetContactsQuery } from 'store/redux/contact/contactAPI';
 import { useSelector } from 'react-redux';
 import { selectFilter } from 'store/redux/filter/filter-slice';
 import { filteredContacts } from 'helpers';
@@ -7,6 +7,7 @@ import { ListItemContact } from 'components/ContactsListItem/ContactsListItem';
 
 export const ContactsList = () => {
   const { data: contacts, isLoading, isError } = useGetContactsQuery();
+
   const filter = useSelector(selectFilter);
 
   const phoneContacts = filteredContacts(contacts, filter);
